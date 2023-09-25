@@ -22,37 +22,58 @@ RENAME: This is used to rename an object existing in the database.
 ### 1) Create a table student with the following fieds rollno,name,age,address,phoneno.
 
 ### SQL QUERY: 
-
+```
+CREATE TABLE student(
+    rollno numeric(5),name char(50),age numeric(5),
+    address varchar(100),
+    phoneno numeric(10)
+    );
+```
 
 ### OUTPUT:
+
+![image](https://github.com/Anandanaruvi/G2_DBMS/assets/120443233/e3ea5483-58c7-4979-a0e7-00b5835d6a5c)
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
 
+ALTER TABLE student ADD Department char(10);
+
 ### OUTPUT:
 
+![image](https://github.com/Anandanaruvi/G2_DBMS/assets/120443233/f780a081-9a6a-492e-a5a3-b24142fc797d)
 
 ### 3) Drop the student table
- 
+
 ### SQL QUERY: 
 
+DROP TABLE student;
 
 ### OUTPUT:
 
+![image](https://github.com/Anandanaruvi/G2_DBMS/assets/120443233/e8a3485f-b5ec-49f4-ba62-44fb22a00c71)
 
 ### 4) Delete the student table using truncate keyword
 
 ### SQL QUERY: 
 
+TRUNCATE TABLE student;
 
 ### OUTPUT:
 
-
+![image](https://github.com/Anandanaruvi/G2_DBMS/assets/120443233/1ca46901-fb71-4f0f-a1e0-416a9ae8b7a4)
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
 
+ALTER TABLE student RENAME TO mystudent;
 
 ### OUTPUT:
+
+![image](https://github.com/Anandanaruvi/G2_DBMS/assets/120443233/8313d15b-a94f-4775-acf9-66f4821f042b)
+
+### RESULT:
+
+Thus a student database has been created and DDL queries are executed successfully.
